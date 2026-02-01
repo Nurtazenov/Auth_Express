@@ -1,0 +1,13 @@
+type User {
+    id: ID!
+    emaiL: String!
+    role: Role!
+}
+input RegisterInput {
+    email: String!
+    password: String!
+}
+
+type Mutation {
+    register(input: RegisterInput!): User!
+}
